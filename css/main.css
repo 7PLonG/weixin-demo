@@ -368,3 +368,36 @@ body {
     overflow: hidden;
     text-overflow:clip;
     }
+#p_06{
+	background-image: -webkit-radial-gradient(circle at 50% 37.6%, #ff7a64, #ed5b44);
+	background-image: radial-gradient(circle at 50% 37.6%, #ff7a64, #ed5b44);
+	background: url(../img/p6-bg1.jpg) center center/contain no-repeat #ed5b44;
+
+}
+#p_06 .header{height:16.8%;}
+#p_06 .tit{
+	width: 68.4%;height: 15.4%;
+	margin: 0 auto;
+}
+#p_06 .pop{
+	width: 85.3%;height: 30.7%;
+	margin: 0 auto;
+}
+#p_06 .img{
+	width: 41.6%;
+	margin: 0 auto;
+	z-index: 3;
+}
+#p_06 .footer,#p_06_2 .footer {  /* 合并  */
+	position: absolute;
+	bottom: -19px;   
+	width: 100%;
+}
+#p_06_2{
+	background-image: -webkit-radial-gradient(circle at 50% 37.6%, #ff7a64, #ed5b44);
+	background-image: radial-gradient(circle at 50% 37.6%, #ff7a64, #ed5b44);
+	background: url(../img/p6-bg2.jpg) center center/contain no-repeat #ed5b44;
+}
+#p_06_2 .header{height:24.9%;}
+#p_06_2 .tit{width: 75.9%; margin: 0 auto;}
+#p_06_2 .img{width:41.2%; margin: 0 auto; }
