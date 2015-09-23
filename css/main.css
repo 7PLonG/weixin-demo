@@ -146,7 +146,7 @@ button,
 select,
 keygen,
 legend {
-	font: 16px/1.14 arial, \5b8b\4f53;
+	font: 32px/2 "microsoft yahei" arial, \5b8b\4f53;
 	color: #333;
 	outline: 0;
 }
@@ -169,7 +169,19 @@ body {
 	height: 100%;
 }
 /* reset */
+/* 添加部分功能性类 */
+.f-cb:after,.f-cb:before{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
+.f-cb{zoom:1;}
+.f-ln{
+	display:-webkit-box !important;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	word-break: break-all;
+	-webkit-box-orient:vertical;
+	/*-webkit-line-clamp: num;  add */  
 
+}
+/*  function end */ 
 #box,
 .wrap {
 	width: 100%;
@@ -212,7 +224,7 @@ body {
 }
 #p_01 .footer {
 	position: absolute;
-	bottom: -7px;
+	bottom: -19px;   /* 否则无法将其至于底端  */
 	width: 100%;
 }
 /* 第二页*/
@@ -251,8 +263,7 @@ body {
 	top: 79.3%;
 	left: 50%;
 	transform: translate(-50%, 0);
-	/*	width: 64.3%;*/
-	
+	width: 64.3%;
 	z-index: 3;
 }
 #p_02 .box_m {
@@ -275,7 +286,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, 0);
 	z-index: 3;
-	/*	width: 71%;*/
+	width: 71%;
 }
 #p_02 .box_b {
 	position: absolute;
@@ -310,4 +321,50 @@ body {
 	left: 41.6%;
 	width: 36%;
 }
-#p_04 {}
+#p_04 {
+	background-color: #8ad160;
+}
+#p_04 .header{
+	margin:13.8% auto 0;width: 74.4%;height: 33.2%;
+}
+#p_04 .box{position: relative; margin: 0 7%;}
+#p_04 .info{margin-bottom: 0.75rem;}
+#p_04 .icon{
+	width: 3.3rem;height: 3.3rem;
+	float: left;
+	border: 2px solid  #42980e;
+	-webkit-border-radius: 50%;
+	border-radius:50%; 
+}
+#p_04 .box .name{font-size: /*0.938rem*/ 15px;line-height: 3.3rem;color: #fff;}
+#p_04 .box .dec{
+	font-size: /*0.75rem*/12px;line-height: /*1.5rem*/24px;color: #245a05;
+	padding-bottom: 2px;margin-bottom: 9px;
+}
+#p_04 .text{-webkit-line-clamp:3; height: 72px;}
+#p_04 .botton{position: absolute;width:85px;height: 27px;bottom:0;right:0;background-image: url(../img/p4-bot.png);background-size: contain;}
+#p_04 .botton p{color: #092235; padding-left: 17px;}
+#p_05 {
+	background: url(../img/p5-bg.png) center 8%/contain no-repeat #589eec;
+}
+#p_05 .header{height: 38.3%;}
+#p_05 .main{box-sizing: border-box; position: relative;height: 61.7%;}
+#p_05 .main>div:nth-child(odd){
+	border-right: solid 1px #72a6f1;
+	padding-left: 5%;
+}
+#p_05 .main>div:nth-child(even){
+	padding-right:5%;
+}
+#p_05 .box{box-sizing: border-box; position: relative; float: left; width: 50%; height: 50%;
+			border-top: solid 1px #72a6f1;
+}
+
+#p_05 .box .img{height: 31.6%;margin: 12px auto 0;text-align: center;}
+#p_05 .img img{height: 100%; width: auto;}
+#p_05 .box .tit{font-size: 15px; color: #fcff00;text-align: center;}
+#p_05 .box .text{padding: 0 12px;font:12px/17px "microsoft yahei";color:#fff;height:70px;
+    overflow-wrap:break-word;
+    overflow: hidden;
+    text-overflow:clip;
+    }
