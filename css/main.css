@@ -1,4 +1,4 @@
-/* reset  link:"http://nec.netease.com/framework/css-reset.html" */
+/* reset  link:"http://nec.netease.com/framework/css-reset.html" 基于移动页面调整了字体  */
 
 html,
 body,
@@ -146,7 +146,7 @@ button,
 select,
 keygen,
 legend {
-	font: 32px/2 "microsoft yahei" arial, \5b8b\4f53;
+	font: 32px/2 "microsoft yahei",Tahoma Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self,\5b8b\4f53;
 	color: #333;
 	outline: 0;
 }
@@ -182,6 +182,7 @@ body {
 
 }
 /*  function end */ 
+body{overflow: scroll;-webkit-overflow-scrolling: touch;} /* 原生滚动效果，IOS */
 #box,
 .wrap {
 	width: 100%;
