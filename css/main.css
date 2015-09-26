@@ -172,13 +172,13 @@ body {
 /* 添加部分功能性类 */
 .f-cb:after,.f-cb:before{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
 .f-cb{zoom:1;}
-.f-ln{
+.f-ln3{
 	display:-webkit-box !important;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	word-break: break-all;
 	-webkit-box-orient:vertical;
-	/*-webkit-line-clamp: num;  add */  
+	-webkit-line-clamp:3;
 
 }
 /*  function end */ 
@@ -309,6 +309,7 @@ body{overflow: scroll;-webkit-overflow-scrolling: touch;} /* 原生滚动效果�
 	left: 50%;
 	transform: translate(-50%, 0);
 	z-index: 3;
+	width: 70.3%;
 }
 #p_03 {
 	background: url(../img/p3-bg-2.png) center center/cover no-repeat #ffdb5d;
@@ -337,14 +338,68 @@ body{overflow: scroll;-webkit-overflow-scrolling: touch;} /* 原生滚动效果�
 	-webkit-border-radius: 50%;
 	border-radius:50%; 
 }
-#p_04 .box .name{font-size: /*0.938rem*/ 15px;line-height: 3.3rem;color: #fff;}
+#p_04 .box .name{font-size: /*0.938rem*/ 15px;line-height: 53px;color: #fff;}
 #p_04 .box .dec{
 	font-size: /*0.75rem*/12px;line-height: /*1.5rem*/24px;color: #245a05;
 	padding-bottom: 2px;margin-bottom: 9px;
 }
-#p_04 .text{-webkit-line-clamp:3; height: 72px;}
+#p_04 .text{height: 72px;}
 #p_04 .botton{position: absolute;width:85px;height: 27px;bottom:0;right:0;background-image: url(../img/p4-bot.png);background-size: contain;}
 #p_04 .botton p{color: #092235; padding-left: 17px;}
+/* P4点击详情 */
+#p_04 .inner{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+}
+#p_04 .inbox{
+	position: absolute;
+	width: 85%;
+	height: 47.3%;
+	box-sizing: border-box;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #9add7b;
+	border: 1.5px solid #2a5f0a;
+	border-radius: 6px;
+}
+#p_04 .inbox .dec{
+	margin: 12px 20px 0;
+}
+#p_04 .inbox .info{
+	margin-top: 30px;
+}
+#p_04 .inbox .icon{
+	float: none;
+	margin: 0 auto;
+}
+#p_04 .inbox .name{
+	text-align: center;
+	line-height: 15px;
+	margin-top: 8px;
+}
+#p_04 .inbox .close{
+	position: absolute;
+	left: 100%;
+	transform: translate(-115%, 0);
+	box-sizing: border-box;
+	width: 47px;height: 47px;
+	margin: 3.5px;
+	border: 1.5px solid #2a5f0a;
+	border-radius: 50%;
+	background-color: #42980e;
+	font-size: 47px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 37px;
+	color: #FFF;
+}
 #p_05 {
 	background: url(../img/p5-bg.png) center 8%/contain no-repeat #589eec;
 }
