@@ -283,7 +283,7 @@ body{overflow: scroll;-webkit-overflow-scrolling: touch;} /* 原生滚动效果�
 }
 #p_02 .box_m .img-t {
 	position: absolute;
-	top: 73.5%;
+	top: 65%; /*top: 73.5%;*/
 	left: 50%;
 	transform: translate(-50%, 0);
 	z-index: 3;
@@ -312,16 +312,70 @@ body{overflow: scroll;-webkit-overflow-scrolling: touch;} /* 原生滚动效果�
 	width: 70.3%;
 }
 #p_03 {
-	background: url(../img/p3-bg-2.png) center center/cover no-repeat #ffdb5d;
+	background: url(../img/p3-bg-3.jpg) center center/cover no-repeat #ffdb5d;
 	background-size: contain;
 	font-family: "microsoft yahei";
 	/*font-size: 2em;*/
+}
+#p_03 header{
+	position: relative;
+	margin:23.9% auto 0;
+	width: 73%;
+	height: 37.4%;
+	background: url(../img/p3-h.png) center center/contain no-repeat #ffdb5d;
+}
+#p_03 .img-t{
+	position: absolute;
+	top: 39%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 73.3%;
+	height: 19.3%;
+}
+#p_03 .tit{
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bolder;
+	
+	
 }
 #p_03 .img {
 	position: absolute;
 	top: 77.7%;
 	left: 41.6%;
 	width: 36%;
+}
+#p_03 .text{
+	font-size: 13px;
+	width: 70%;
+}
+#p_03 .text span{
+	font-size: 17.5px;
+	color: #fd583f;
+}
+#p_03 .l-1{
+	position: absolute;
+	top: 55.8%;
+	left: 50%;
+	transform: translate(-55%, 0);
+
+}
+#p_03 .l-2{
+	position: absolute;
+	top: 64%;
+	right: 50%;
+	transform: translate(80%, 0);
+
+}
+#p_03 .l-3{
+	position: absolute;
+	top: 72%;
+	left: 50%;
+	transform: translate(-40%, 0);
+
 }
 #p_04 {
 	background-color: #8ad160;
