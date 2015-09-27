@@ -222,6 +222,16 @@ body{overflow: scroll;-webkit-overflow-scrolling: touch;} /* 原生滚动效果�
 	top: 64.1%;
 	left: 29.2%;
 	z-index: 3;
+	animation: boom 5s infinite;
+	animation-name: boom;
+	animation-direction: alternate;
+	
+}
+@keyframes boom{
+	0%{transform: rotate(-45deg);}
+	50%{transform: rotate(45deg);}
+	100%{transform: rotate(360deg);}
+	
 }
 #p_01 .footer {
 	position: absolute;
